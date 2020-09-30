@@ -37,6 +37,14 @@ export const getStudentsByInstructorId = (instructorId) => {
 // It should return an array of students who know as many (or more) languages than `languageCount`
 // Ex: If the number 2 is passed to the function, only the students who know 2 or more languages should be returned
 
+export const getPolyglotStudents = (languageCount) => {
+
+    const studentArray = students.filter(multiLingual => students.languages.length >= languageCount)
+
+}
+
+
+
 // Export a function called getAvailableInstructors
 // It should not accept any parameters
 // It should return an array of instructors that don't have any students
