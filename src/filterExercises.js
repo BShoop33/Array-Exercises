@@ -17,6 +17,10 @@ export const getStudentsInCohort = (cohort) => {
 // It should not accept any parameters
 // It should return an array of only the full time students
 
+export const getFullTimeStudents = () => {
+    return students.fullTime
+}
+
 // Export a function called getStudentsByInstructorId
 // It should accept one integer parameter name `instructorId`
 // It should return an array of students with that instructor
