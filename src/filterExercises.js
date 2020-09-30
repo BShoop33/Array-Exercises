@@ -25,7 +25,6 @@ export const getFullTimeStudents = () => {
 // It should accept one integer parameter name `instructorId`
 // It should return an array of students with that instructor
 
-
 export const getStudentsByInstructorId = (instructorId) => {
     if (students.instructorId === parseInt(instructorId)) {
         return students
@@ -38,12 +37,9 @@ export const getStudentsByInstructorId = (instructorId) => {
 // Ex: If the number 2 is passed to the function, only the students who know 2 or more languages should be returned
 
 export const getPolyglotStudents = (languageCount) => {
-
-    const studentArray = students.filter(multiLingual => students.languages.length >= languageCount)
-
+    const studentArray = students.filter(multiLingual => multiLingual.languages.length >= languageCount)
+    return studentArray
 }
-
-
 
 // Export a function called getAvailableInstructors
 // It should not accept any parameters
