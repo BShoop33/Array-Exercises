@@ -7,6 +7,12 @@ const instructors = useInstructors();
 // It should accept one integer parameter named `cohort`
 // It should return an array of just the students who are in that cohort
 
+export const getStudentsInCohort = (cohort) => {
+    const matchedStudents = useStudents().filter(student => {
+        return parseInt(cohort)
+    })
+}
+
 // Export a function called getFullTimeStudents
 // It should not accept any parameters
 // It should return an array of only the full time students
