@@ -8,12 +8,12 @@ const instructors = useInstructors();
 // It should return the student object with the matching ID
 // Ex: getStudentById(1)
 
-// export const getStudentId = (id) => {
-//     const object = students.find(taco => {
-//         taco.id === id
-//     })
-//     return array
-// }
+export const getStudentById = (id) => {
+    const taco = students.find(bread => {
+        return bread.id === id
+    })
+    return taco
+}
 
 // Export a function called getInstructorById
 // It should accept one integer parameter named `id`
