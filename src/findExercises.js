@@ -20,6 +20,13 @@ export const getStudentById = (id) => {
 // It should return the instructor object with the matching ID
 // Ex: getInstructorById(1)
 
+export const getInstructorById = (id) => {
+    const taco = instructors.find(bread => {
+        return bread.id === id
+    })
+    return taco
+}
+
 // Export a function called getStudentByLastName
 // It should accept one string parameter named `lastName`
 // It should return the student object whose last name matches `lastName`
